@@ -1,0 +1,46 @@
+@font-face {
+    font-family: billy-argel;
+    src: url(../fonts/billy-argel/billy-argel.otf);
+}
+.container {
+    min-width: 360px;
+    margin: 0 auto;
+}
+.together-logo {
+    width: 150px;
+    height: auto;
+}
+.welcome-text {
+    font-family: billy-argel;
+    font-size: 17px;
+    color: #80AF39;
+    font-weight: bold;
+}
+.facebook-login-btn {
+    height: 45px;
+    width: auto;
+}
+.power-btn img {
+    width: 50px;
+    height: auto;
+    margin: 15px;
+}
+.not-logged-in {
+    text-align: center;
+    padding-top: 15px;
+}
+.logged-in {
+
+
+}
+.main-map {
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* common classes */
+.text-center {
+    text-align: center;
+}

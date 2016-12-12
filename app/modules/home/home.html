@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="text-center">
+        <img src="assets/images/loading.gif" alt="loading gif" ng-show="loading">
+    </div>
+    <div ng-show="!loading">
+        <div class="not-logged-in" ng-show="!isLoggedIn()">
+            <img src="assets/images/togetherApp.png" alt="together logo" class="together-logo">
+            <p class="welcome-text">Login with your facebook account <br> and start connecting</p>
+            <a href="" ng-click="loginFb()">
+                <img src="assets/images/fb-login.png" alt="facebook login" class="facebook-login-btn">
+            </a>
+        </div>
+        <div class="logged-in" ng-show="isLoggedIn()">
+            <a href="" class="power-btn" ng-click="logoutFb(); logout_click = !logout_click;">
+                <img ng-src="assets/images/power-button-{{logout_click?'off':'on'}}.png" alt="power button">
+            </a>
+            <div class="main-map">
+                <div id="map" style="height: 100%; width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+</div>
